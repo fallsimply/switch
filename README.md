@@ -10,3 +10,5 @@ and use the element `<mk-switch></mk-switch>`
 | -------- | -------- | :---------: |
 | Name     |  String  |  `switch1`  |
 | Checked  | Boolean  |   `true`    |
+
+[Web Component Demo](switch.fallproject.org/switch.lit.html)

@@ -2,7 +2,6 @@ import {LitElement} from 'https://unpkg.com/@polymer/lit-element@latest/lit-elem
 import {html, directive} from "https://unpkg.com/lit-html@1.1.0/lit-html.js?module";
 
 const checkedattr = directive((checked) => (part) => { 
-    console.log("test")
     if (checked) {
         part.committer.element.setAttribute("checked", "")
     }
