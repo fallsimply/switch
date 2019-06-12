@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>fall switch demo</title>
-    <link rel="stylesheet" href="switch.css">
+    <link rel="stylesheet" href="switch.seperate.css">
 </head>
 <body>
     <div class="app">
         <form action="form" method="GET">
-            <label class="switch" role="tab">
-                <input type="checkbox" name="switch" id="nub">
-                <span class="nub"></span>
-                <div class="switchbg"></div>
-            </label>
+            <div>
+                <input type="checkbox" name="switch" id="switch">
+                <label class="switch__container" for="switch">
+                    <span class="switch__nub"></span>
+                    <div class="switch__background"></div>
+                </label>
+            </div>
             <input type="submit" value="submit">
         </form>
     </div>

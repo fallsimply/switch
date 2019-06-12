@@ -5,28 +5,28 @@
     --switch-radius: 7px;
     --switch-offset: calc(var(--switch-knob-radius) - var(--switch-radius));
 }
-.switch {
+.switch__container {
     position: relative;
     display: block;
     width: 36px;
     height: calc(2 * var(--switch-knob-radius));
     margin: var(--switch-offset) 0;
 }
-.switch input:focus ~ .switchbg {
+input#switch:focus ~ .switch__container .switch__background {
     outline: 1px solid rgb(77, 144, 254);
 }
-.switch input:checked ~ .switchbg{
+input#switch:checked ~ .switch__container .switch__background{
     background: var(--switch-active);
     filter: saturate(50%) brightness(150%)
 }
-.switch input:checked ~ .nub {
+input#switch:checked ~ .switch__container .switch__nub {
     background: var(--switch-active);
     right: 0
 }
-.switch input ~ .switchbg {
+.switch__container .switch__background {
     background-color: var(--switch);
 }
-.switchbg {
+.switch__background {
     display: block;
     width: 36px;
     height: calc(2 * var(--switch-radius));
@@ -35,14 +35,14 @@
     top: 0;
     margin: var(--switch-offset) 0;
 }
-.switch input {
+input#switch {
     width: 36px;
     height: calc(2 * var(--switch-knob-radius));
     margin: 0;
     opacity: 0;
-    position: absolute
+    position: absolute;
 }
-.nub {
+.switch__nub {
     width: calc(2 * var(--switch-knob-radius));
     height: calc(2 * var(--switch-knob-radius));
     position: absolute;
