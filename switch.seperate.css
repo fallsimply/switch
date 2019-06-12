@@ -32,13 +32,9 @@ input#switch:checked ~ .switch__container .switch__nub {
     height: calc(2 * var(--switch-radius));
     border-radius: var(--switch-radius);
     position: absolute;
-    top: 0;
     margin: var(--switch-offset) 0;
 }
 input#switch {
-    width: 36px;
-    height: calc(2 * var(--switch-knob-radius));
-    margin: 0;
     opacity: 0;
     position: absolute;
 }
@@ -46,7 +42,6 @@ input#switch {
     width: calc(2 * var(--switch-knob-radius));
     height: calc(2 * var(--switch-knob-radius));
     position: absolute;
-    top: 0;
     border-radius: 50%;
     background: white;
     z-index: 1;
