@@ -1,7 +1,7 @@
 # MK SWITCH
 built in pure css
 
-to include as a web component add the script `<script src="https://switch.fallproject.org/switch.css">`
+to include as a web component add the script `<script src="https://switch.fallproject.org/switch.lit.js">`
 and use the element `<mk-switch></mk-switch>`
 
 ## Properties
@@ -12,5 +12,7 @@ and use the element `<mk-switch></mk-switch>`
 | Checked  | Boolean  |   `true`    |
 
 ## Demos
-[Web Component Demo](switch.fallproject.org/switch.lit.html)<br>
-[HTML Markup Demo](switch.fallproject.org/index.html)
+| Demos                                                       	|
+| ------------------------------------------------------------	|
+| [Web Component Demo](switch.fallproject.org/switch.lit.html) 	|
+| [HTML Markup Demo](switch.fallproject.org/index.html)        	|
