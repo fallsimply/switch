@@ -1,32 +1,21 @@
-import {LitElement} from 'https://unpkg.com/@polymer/lit-element@latest/lit-element.js?module';
-import {html, directive} from "https://unpkg.com/lit-html@1.1.0/lit-html.js?module";
-
-const checkedattr = directive((checked) => (part) => { 
-    if (checked) {
-        part.committer.element.setAttribute("checked", "")
-    }
-});
+import {LitElement, html} from 'https://unpkg.com/@polymer/lit-element@latest/lit-element.js?module'
 
 class Switch extends LitElement {
-
     static get properties() {
         return { 
           name: { type: String },
           checked: { type: Boolean }
         }
     }
-
     constructor() {
         super()
         this.name = "switch"
         this.checked = false
     }
-
-    // Render element DOM by returning a `lit-html` template.
     render() {
         return html`
             <label class="switch" role="tab">
-                <input type="checkbox" name="${this.name}" id="nub" attr=${checkedattr(this.checked)}>
+                <input type="checkbox" name="${this.name}" id="nub" ?checked=${this.checked}>
                 <span class="nub"></span>
                 <div class="switchbg"></div>
             </label>
