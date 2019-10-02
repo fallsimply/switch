@@ -16,7 +16,7 @@ class Switch extends LitElement {
         return html`
             <label class="switch" role="tab">
                 <input type="checkbox" name="${this.name}" id="nub" ?checked=${this.checked}>
-                <span class="nub"></span>
+                <div class="nub"></div>
                 <div class="switchbg"></div>
             </label>
             <link rel="stylesheet" href="https://switch.fallproject.org/switch.css">
