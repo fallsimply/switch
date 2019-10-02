@@ -17,7 +17,7 @@
 }
 .switch input:checked ~ .switchbg{
     background: var(--switch-active);
-    filter: saturate(50%) brightness(150%)
+    filter: saturate(50%) brightness(125%)
 }
 .switch input:checked ~ .nub {
     background: var(--switch-active);
