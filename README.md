@@ -1,4 +1,4 @@
-# MK SWITCH
+# mk switch
 built in pure css
 
 web component built in lit-element
