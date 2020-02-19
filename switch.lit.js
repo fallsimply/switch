@@ -80,6 +80,16 @@ class Switch extends LitElement {
 
 	toggleChecked() {
 		this.checked = !this.checked;
+		this.toggleEvent();
+	}
+
+	toggleEvent() {
+		let event = new CustomEvent('toggle', {
+			detail: {
+				message: 'Switch Toggled'
+			}
+		});
+		this.dispatchEvent(event);
 	}
 
 	render() {
